@@ -177,3 +177,4 @@ if st.session_state.results.get('api_errors', 0) > 3:
 # --- Cache Management ---
 if st.session_state.results.get('last_updated', 0) < time.time() - 300:
     get_targets.cache_clear()
+
